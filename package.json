@@ -1,0 +1,70 @@
+{
+  "name": "@frsource/autoresize-textarea",
+  "version": "0.0.1",
+  "description": "Minimalistic plugin to autosize your textareas! 💪",
+  "sideEffects": false,
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.es.js",
+  "unpkg": "./dist/index.umd.js",
+  "scripts": {
+    "start": "yarn clean && microbundle watch",
+    "build": "yarn clean && microbundle --compress",
+    "lint": "eslint '**/*.ts' --ignore-pattern '**/*.d.ts'",
+    "lint:fix": "yarn lint --fix",
+    "lint:ci": "yarn lint --max-warnings 0",
+    "prettify": "prettier --write src",
+    "prettify:ci": "prettier --check src",
+    "release": "semantic-release",
+    "release:ci": "yarn release --yes",
+    "release:test": "yarn release --no-git-tag-version --no-push --skip-npm",
+    "clean": "rimraf dist/**/*"
+  },
+  "homepage": "https://github.com/FRSOURCE/autoresize-textarea/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FRSOURCE/autoresize-textarea.git"
+  },
+  "keywords": [
+    "autosize textarea",
+    "resize textarea",
+    "lightweight",
+    "simple",
+    "autosize",
+    "fluid textarea"
+  ],
+  "bugs": {
+    "url": "https://github.com/FRSOURCE/autoresize-textarea/issues"
+  },
+  "author": "Jakub Freisler <jakub@frsource.org>",
+  "license": "MIT",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^9.0.0",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "microbundle": "^0.14.2",
+    "prettier": "^2.5.1",
+    "semantic-release": "^19.0.2",
+    "typescript": "^4.5.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ]
+}

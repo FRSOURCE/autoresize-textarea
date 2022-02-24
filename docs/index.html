@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css">
+    <style>
+      textarea {
+        resize: vertical;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <hgroup>
+          <h1>@frsource/autoresize-textarea</h1>
+          <h2>Minimalistic plugin to autosize your textareas! 💪</h2>
+        </hgroup>
+        <article>
+            <hgroup>
+              <h4>Autoresizing, fluid textarea demo</h4>
+              <h5>Try adding new lines to textarea below</h5>
+            </hgroup>
+          <form>
+            <label>
+              <textarea rows="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend commodo interdum. Donec tincidunt consequat semper. Nulla id magna viverra, egestas est sit amet, lacinia felis. Donec ut mauris nunc. Vivamus ex sem, tempor ac felis ut, congue laoreet lectus. Etiam urna augue, iaculis in metus eu, pharetra lobortis tortor.</textarea>
+            </label>
+          </form>
+
+          <details open>
+            <summary>ES/TS code example</summary>
+            <pre><code>&lt;<b>textarea</b> <i>row</i>=<u>"2"</u>&gt;<span style="white-space: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend commodo interdum. Donec tincidunt consequat semper. Nulla id magna viverra, egestas est sit amet, lacinia felis. Donec ut mauris nunc. Vivamus ex sem, tempor ac felis ut, congue laoreet lectus. Etiam urna augue, iaculis in metus eu, pharetra lobortis tortor.</span>&lt;/<b>textarea</b>&gt;
+  
+&lt;<b>script</b>&gt;
+  <b>import</b> { attach } <b>from</b> <u>"@frsource/autoresize-textarea"</u>;
+  <b>const</b> textarea = document.<i>querySelector</i>(<u>"textarea"</u>);
+  attach(textarea);
+&lt;/<b>script</b>&gt;</code></pre>
+          </details>
+
+          <details>
+            <summary>UMD code example</summary>
+            <pre><code>&lt;<b>textarea</b> <i>row</i>=<u>"2"</u>&gt;<span style="white-space: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend commodo interdum. Donec tincidunt consequat semper. Nulla id magna viverra, egestas est sit amet, lacinia felis. Donec ut mauris nunc. Vivamus ex sem, tempor ac felis ut, congue laoreet lectus. Etiam urna augue, iaculis in metus eu, pharetra lobortis tortor.</span>&lt;/<b>textarea</b>&gt;
+  
+&lt;<b>script</b>&gt;
+  <b>const</b> textarea = document.<i>querySelector</i>(<u>"textarea"</u>);
+  window.autoresizeTextarea.<i>attach</i>(textarea);
+&lt;/<b>script</b>&gt;</code></pre>
+          </details>
+        </article>
+      </section>
+    </main>
+    <script src="https://unpkg.com/@frsource/autoresize-textarea"></script>
+    <script src="../dist/index.umd.js"></script>
+    <script>
+      const textarea = document.querySelector("textarea");
+      window.autoresizeTextarea.attach(textarea);
+    </script>
+  </body>
+</html>
