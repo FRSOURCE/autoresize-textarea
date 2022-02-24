@@ -11,6 +11,7 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.es.js",
   "unpkg": "./dist/index.umd.js",
+  "types": "./dist/indnex.d.ts",
   "scripts": {
     "start": "yarn clean && microbundle watch",
     "build": "yarn clean && microbundle --compress",
@@ -46,6 +47,7 @@
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.2",
     "@semantic-release/npm": "^9.0.0",
     "@semantic-release/release-notes-generator": "^10.0.3",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
