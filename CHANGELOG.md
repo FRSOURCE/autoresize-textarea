@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/FRSOURCE/autoresize-textarea/compare/v1.2.0...v1.2.1) (2022-02-25)
+
+
+### Bug Fixes
+
+* height calculation by properly handling overflow change ([dd452df](https://github.com/FRSOURCE/autoresize-textarea/commit/dd452dfbe528e5671aa193c5889c41f7f40bc06b))
+
 # [1.2.0](https://github.com/FRSOURCE/autoresize-textarea/compare/v1.1.0...v1.2.0) (2022-02-25)
 
 
