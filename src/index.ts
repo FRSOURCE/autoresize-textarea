@@ -18,7 +18,6 @@ export const attach = (element: HTMLTextAreaElement) => {
     }
   };
 
-  element.style.overflow = "hidden";
   element.style.boxSizing = "border-box";
 
   inputHandler();
