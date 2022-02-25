@@ -10,11 +10,14 @@ export const attach = (element: HTMLTextAreaElement) => {
       element.scrollHeight > element.clientHeight ||
       prevHeight === element.style.height
     ) {
+      const currentOverflow = element.style.overflow;
       element.style.height = "auto";
+      element.style.overflow = "hidden";
       element.style.height = prevHeight =
         element.scrollHeight +
         (element.offsetHeight - element.clientHeight) +
         "px";
+      element.style.overflow = currentOverflow;
     }
   };
 
