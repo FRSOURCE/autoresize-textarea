@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/FRSOURCE/autoresize-textarea/compare/v1.1.0...v1.2.0) (2022-02-25)
+
+
+### Features
+
+* remove unnecessary overflow: hidden ([35357a9](https://github.com/FRSOURCE/autoresize-textarea/commit/35357a97718bce35b47b237ba04b82ae40cc287c))
+
 # [1.1.0](https://github.com/FRSOURCE/autoresize-textarea/compare/v1.0.0...v1.1.0) (2022-02-25)
 
 
