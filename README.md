@@ -45,7 +45,17 @@
 
 ## Quick start
 
-### ES/Typescript
+## Installation
+
+```bash
+# npm
+npm install @frsource/autoresize-textarea
+
+# Yarn
+yarn add @frsource/autoresize-textarea
+```
+
+### Modern JS/Typescript
 
 ```ts
 import { attach } from "@frsource/autoresize-textarea";
@@ -57,7 +67,7 @@ attach(textarea);
 
 ```js
 const textarea = document.querySelector("textarea");
-  window.autoresizeTextarea.attach(textarea);
+window.autoresizeTextarea.attach(textarea);
 ```
 
 For working example, check out [our demo](https://www.frsource.org/autoresize-textarea).

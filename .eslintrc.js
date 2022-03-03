@@ -32,5 +32,12 @@ module.exports = {
         '@typescript-eslint/explicit-module-boundary-types': 'off'
       }
     },
+    {
+      files: ['docs/**.js'],
+      env: {
+        node: false,
+        browser: true
+      }
+    },
   ],
 };

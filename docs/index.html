@@ -1,32 +1,71 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#111">
+    <meta name="msapplication-TileColor" content="#111">
+    <meta name="application-name" content="Autosize-textarea">
+    <title>Autoresize Textarea - Docs - FRSOURCE</title>
+    <meta name="description" content="@frsource/autoresize-textarea allows you to build autoresizing, fluid textarea with just one line of code">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://buttons.github.io/">
+    <link rel="preconnect" href="https://unpkg.com/">
+    <meta property="og:title" content="Autoresize Textarea - FRSOURCE">
+    <meta property="og:description" content="@frsource/autoresize-textarea allows you to build autoresizing, fluid textarea in just one line">
+    <meta property="og:url" content="https://www.frsource.org/autoresize-textarea/">
+    <meta property="og:image" content="https://www.frsource.org/logo.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:site_name" content="frsource.org">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="frsource.org">
     <style>
       textarea {
         resize: vertical;
       }
     </style>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
   <body>
     <main>
-      <section>
+      <header>
+        <nav>
+          <ul></ul>
+          <ul>
+            <li><a class="github-button" target="_blank" data-color-scheme="no-preference: light; light: light; dark: dark;" href="https://github.com/sponsors/FRSOURCE" data-icon="octicon-heart" aria-label="Sponsor @FRSOURCE on GitHub">Sponsor</a></li>
+            <li><a class="github-button" target="_blank" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" href="https://github.com/FRSOURCE/autoresize-textarea" aria-label="View FRSOURCE/autoresize-textarea on GitHub">View on GitHub</a></li>
+          </ul>
+        </nav>
         <hgroup>
-          <h1>@frsource/autoresize-textarea</h1>
+          <h1>Autoresize textarea</h1>
           <h2>Minimalistic plugin to autosize your textareas! 💪</h2>
         </hgroup>
+      </header>
+      <section>
+        <p>With just a few lines of code, textarea starts resizing automatically based on the length of the input text. Magic 🪄</p>
         <article>
-            <hgroup>
-              <h4>Autoresizing, fluid textarea demo</h4>
-              <h5>Try adding new lines to textarea below</h5>
-            </hgroup>
+          <hgroup>
+            <h4>Demo</h4>
+            <h5>Try adding few extra new lines to textarea below:</h5>
+          </hgroup>
           <form>
             <label>
               <textarea rows="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend commodo interdum. Donec tincidunt consequat semper. Nulla id magna viverra, egestas est sit amet, lacinia felis. Donec ut mauris nunc. Vivamus ex sem, tempor ac felis ut, congue laoreet lectus. Etiam urna augue, iaculis in metus eu, pharetra lobortis tortor.</textarea>
             </label>
           </form>
 
-          <details open>
-            <summary>ES/TS code example</summary>
+          <details>
+            <summary>Installation</summary>
+            <pre><code># npm
+<b>npm</b> install <i>@frsource/autoresize-textarea</i>
+
+# Yarn
+<b>yarn</b> add <i>@frsource/autoresize-textarea</i></code></pre>
+          </details>
+
+          <details>
+            <summary>Modern JS / Typescript demo</summary>
             <pre><code>&lt;<b>textarea</b> <i>row</i>=<u>"2"</u>&gt;<span style="white-space: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend commodo interdum. Donec tincidunt consequat semper. Nulla id magna viverra, egestas est sit amet, lacinia felis. Donec ut mauris nunc. Vivamus ex sem, tempor ac felis ut, congue laoreet lectus. Etiam urna augue, iaculis in metus eu, pharetra lobortis tortor.</span>&lt;/<b>textarea</b>&gt;
   
 &lt;<b>script</b>&gt;
@@ -37,7 +76,7 @@
           </details>
 
           <details>
-            <summary>UMD code example</summary>
+            <summary>UMD code demo</summary>
             <pre><code>&lt;<b>textarea</b> <i>row</i>=<u>"2"</u>&gt;<span style="white-space: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend commodo interdum. Donec tincidunt consequat semper. Nulla id magna viverra, egestas est sit amet, lacinia felis. Donec ut mauris nunc. Vivamus ex sem, tempor ac felis ut, congue laoreet lectus. Etiam urna augue, iaculis in metus eu, pharetra lobortis tortor.</span>&lt;/<b>textarea</b>&gt;
   
 &lt;<b>script</b>&gt;
@@ -47,12 +86,15 @@
           </details>
         </article>
       </section>
+        <p><hr></p>
+        <footer>
+          Created and maintained by <a  target="_blank" href="https://www.frsource.org/" aria-label="Let us shape your web!">FRSOURCE</a>
+      </footer>
     </main>
-    <script src="https://unpkg.com/@frsource/autoresize-textarea"></script>
-    <script src="../dist/index.umd.js"></script>
+    <script defer src="https://unpkg.com/@frsource/autoresize-textarea"></script>
+    <script defer src="../dist/index.umd.js"></script>
+    <script defer src="./index.js"></script>
     <script>
-      const textarea = document.querySelector("textarea");
-      window.autoresizeTextarea.attach(textarea);
     </script>
   </body>
 </html>
