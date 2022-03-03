@@ -22,8 +22,6 @@
   <a href="#quick-start">Getting Started</a>
   ·
   <a href="https://www.frsource.org/autoresize-textarea" target="_blank">Demo</a>
-  .
-  <a href="#contribution">Contribution</a>
   ·
   <a href="https://github.com/FRSOURCE/autoresize-textarea/issues">File an Issue</a>
   ·
@@ -45,7 +43,7 @@
 
 ## Quick start
 
-## Installation
+### Installation
 
 ```bash
 # npm
