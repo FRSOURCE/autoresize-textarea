@@ -2,7 +2,7 @@ const ATTRIBUTE_NAME = "data-frs-autoresize-textarea";
 
 export const attach = (element: HTMLTextAreaElement) => {
   if (element.getAttribute(ATTRIBUTE_NAME)) return;
-  element.setAttribute(ATTRIBUTE_NAME, "true");
+  element.setAttribute(ATTRIBUTE_NAME, "");
 
   let prevHeight = "";
   const inputHandler = () => {
@@ -13,10 +13,9 @@ export const attach = (element: HTMLTextAreaElement) => {
       const currentOverflow = element.style.overflow;
       element.style.height = "auto";
       element.style.overflow = "hidden";
-      element.style.height = prevHeight =
-        element.scrollHeight +
-        (element.offsetHeight - element.clientHeight) +
-        "px";
+      element.style.height = prevHeight = `${
+        element.scrollHeight + (element.offsetHeight - element.clientHeight)
+      }px`;
       element.style.overflow = currentOverflow;
     }
   };
@@ -29,6 +28,7 @@ export const attach = (element: HTMLTextAreaElement) => {
 
   return {
     detach() {
+      element.removeAttribute(ATTRIBUTE_NAME);
       element.removeEventListener("input", inputHandler);
     },
   };
