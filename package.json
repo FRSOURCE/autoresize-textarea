@@ -11,7 +11,7 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.es.js",
   "unpkg": "./dist/index.umd.js",
-  "types": "./dist/indnex.d.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "start": "yarn clean && microbundle watch",
     "build": "yarn clean && microbundle --compress",
