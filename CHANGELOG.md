@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/FRSOURCE/autoresize-textarea/compare/v1.2.5...v1.3.0) (2022-06-15)
+
+
+### Features
+
+* expose update method ([#18](https://github.com/FRSOURCE/autoresize-textarea/issues/18)) ([f3a9877](https://github.com/FRSOURCE/autoresize-textarea/commit/f3a9877d895e05b9a2911bfb84b16d97d2091356))
+
 ## [1.2.5](https://github.com/FRSOURCE/autoresize-textarea/compare/v1.2.4...v1.2.5) (2022-06-15)
 
 ## [1.2.4](https://github.com/FRSOURCE/autoresize-textarea/compare/v1.2.3...v1.2.4) (2022-06-15)
