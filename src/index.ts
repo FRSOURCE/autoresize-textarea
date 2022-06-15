@@ -26,10 +26,24 @@ export const attach = (element: HTMLTextAreaElement) => {
 
   element.addEventListener("input", inputHandler);
 
+  const elementPrototype = Object.getPrototypeOf(element);
+  const descriptor = Object.getOwnPropertyDescriptor(elementPrototype, "value");
+  Object.defineProperty(element, "value", {
+    ...descriptor,
+    set() {
+      descriptor?.set?.apply(
+        this,
+        // eslint-disable-next-line prefer-rest-params
+        arguments as unknown as [unknown]
+      );
+      inputHandler();
+    },
+  });
   return {
     detach() {
       element.removeAttribute(ATTRIBUTE_NAME);
       element.removeEventListener("input", inputHandler);
     },
+    update: inputHandler,
   };
 };
