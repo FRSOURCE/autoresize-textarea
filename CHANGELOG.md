@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/FRSOURCE/autoresize-textarea/compare/v1.2.1...v1.2.2) (2022-06-15)
+
+
+### Bug Fixes
+
+* remove attribute when detach ([#17](https://github.com/FRSOURCE/autoresize-textarea/issues/17)) ([3bb4259](https://github.com/FRSOURCE/autoresize-textarea/commit/3bb42590c6be75f537cdd78ae96c1eb3d02d78ab))
+
 ## [1.2.1](https://github.com/FRSOURCE/autoresize-textarea/compare/v1.2.0...v1.2.1) (2022-02-25)
 
 
