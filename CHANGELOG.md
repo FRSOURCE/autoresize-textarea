@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/FRSOURCE/autoresize-textarea/compare/v1.2.3...v1.2.4) (2022-06-15)
+
+
+### Bug Fixes
+
+* typings file name ([#23](https://github.com/FRSOURCE/autoresize-textarea/issues/23)) ([b4e2694](https://github.com/FRSOURCE/autoresize-textarea/commit/b4e2694e5abfad0b0fdc7d1413099c993fc2897d))
+
 ## [1.2.3](https://github.com/FRSOURCE/autoresize-textarea/compare/v1.2.2...v1.2.3) (2022-06-15)
 
 ## [1.2.2](https://github.com/FRSOURCE/autoresize-textarea/compare/v1.2.1...v1.2.2) (2022-06-15)
