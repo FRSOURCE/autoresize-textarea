@@ -31,10 +31,10 @@ export const attach = (element: HTMLTextAreaElement) => {
   Object.defineProperty(element, "value", {
     ...descriptor,
     set() {
-      descriptor?.set?.apply<unknown, unknown[], unknown>(
+      descriptor?.set?.apply(
         this,
         // eslint-disable-next-line prefer-rest-params
-        arguments as unknown as unknown[]
+        arguments as unknown as [unknown]
       );
       inputHandler();
     },
