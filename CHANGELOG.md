@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/FRSOURCE/autoresize-textarea/compare/v1.3.2...v1.3.3) (2022-06-17)
+
+
+### Bug Fixes
+
+* update module paths inside package.json ([#31](https://github.com/FRSOURCE/autoresize-textarea/issues/31)) ([97fa1a2](https://github.com/FRSOURCE/autoresize-textarea/commit/97fa1a2ddf70bdc730b728c94d0247c034d7fe1f))
+
 ## [1.3.2](https://github.com/FRSOURCE/autoresize-textarea/compare/v1.3.1...v1.3.2) (2022-06-17)
 
 ## [1.3.1](https://github.com/FRSOURCE/autoresize-textarea/compare/v1.3.0...v1.3.1) (2022-06-15)
