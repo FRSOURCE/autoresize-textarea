@@ -55,7 +55,7 @@
     "eslint": "8.21.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-eslint-comments": "3.2.0",
-    "microbundle": "0.15.0",
+    "microbundle": "0.15.1",
     "prettier": "2.7.1",
     "semantic-release": "19.0.4",
     "typescript": "4.7.4"
