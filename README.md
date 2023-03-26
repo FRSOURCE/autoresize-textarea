@@ -46,11 +46,11 @@
 ### Installation
 
 ```bash
-# npm
 npm install @frsource/autoresize-textarea
 
-# Yarn
 yarn add @frsource/autoresize-textarea
+
+pnpm add @frsource/autoresize-textarea
 ```
 
 ### Modern JS/Typescript

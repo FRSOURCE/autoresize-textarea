@@ -13,16 +13,16 @@
   "unpkg": "./dist/index.umd.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "start": "yarn clean && microbundle watch",
-    "build": "yarn clean && microbundle --compress",
+    "start": "pnpm clean && microbundle watch",
+    "build": "pnpm clean && microbundle --compress",
     "lint": "eslint '**/*.ts' --ignore-pattern '**/*.d.ts'",
-    "lint:fix": "yarn lint --fix",
-    "lint:ci": "yarn lint --max-warnings 0",
+    "lint:fix": "pnpm lint --fix",
+    "lint:ci": "pnpm lint --max-warnings 0",
     "prettify": "prettier --write src",
     "prettify:ci": "prettier --check src",
     "release": "semantic-release",
-    "release:ci": "yarn release --yes",
-    "release:test": "yarn release --no-git-tag-version --no-push --skip-npm",
+    "release:ci": "pnpm release --yes",
+    "release:test": "pnpm release --no-git-tag-version --no-push --skip-npm",
     "clean": "rimraf dist/**/*"
   },
   "homepage": "https://github.com/FRSOURCE/autoresize-textarea/",
@@ -63,6 +63,7 @@
   "publishConfig": {
     "access": "public"
   },
+  "packageManager": "pnpm@7.30.3",
   "files": [
     "dist",
     "package.json"
