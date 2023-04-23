@@ -64,7 +64,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "pnpm@7.30.5",
+  "packageManager": "pnpm@7.32.2",
   "files": [
     "dist",
     "package.json"
