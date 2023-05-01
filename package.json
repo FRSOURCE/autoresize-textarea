@@ -57,7 +57,7 @@
     "eslint-plugin-eslint-comments": "3.2.0",
     "microbundle": "0.15.1",
     "prettier": "2.8.8",
-    "rimraf": "^4.4.1",
+    "rimraf": "^5.0.0",
     "semantic-release": "21.0.2",
     "typescript": "5.0.4"
   },
