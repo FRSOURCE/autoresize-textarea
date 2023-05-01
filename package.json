@@ -58,7 +58,7 @@
     "microbundle": "0.15.1",
     "prettier": "2.8.8",
     "rimraf": "^4.4.1",
-    "semantic-release": "21.0.1",
+    "semantic-release": "21.0.2",
     "typescript": "5.0.4"
   },
   "publishConfig": {
