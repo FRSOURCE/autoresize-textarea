@@ -1,6 +1,6 @@
 {
   "name": "@frsource/autoresize-textarea",
-  "version": "1.3.73",
+  "version": "1.3.74",
   "description": "Minimalistic plugin to autosize your textareas! 💪",
   "sideEffects": false,
   "source": "src/index.ts",
