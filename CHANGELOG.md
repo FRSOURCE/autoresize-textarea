@@ -1,3 +1,5 @@
+## [1.3.83](https://github.com/FRSOURCE/autoresize-textarea/compare/v1.3.82...v1.3.83) (2023-07-17)
+
 ## [1.3.82](https://github.com/FRSOURCE/autoresize-textarea/compare/v1.3.81...v1.3.82) (2023-07-17)
 
 ## [1.3.81](https://github.com/FRSOURCE/autoresize-textarea/compare/v1.3.80...v1.3.81) (2023-07-12)
