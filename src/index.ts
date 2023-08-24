@@ -57,7 +57,7 @@ export const attach = (element: HTMLTextAreaElement) => {
       descriptor?.set?.apply(
         this,
         // eslint-disable-next-line prefer-rest-params
-        arguments as unknown as [unknown]
+        arguments as unknown as [unknown],
       );
       inputHandler();
     },
