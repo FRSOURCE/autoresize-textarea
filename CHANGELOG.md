@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/FRSOURCE/autoresize-textarea/compare/v1.3.90...v2.0.0) (2023-08-24)
+
+
+### Bug Fixes
+
+* long textarea causes window scroll to jump ([2b4f257](https://github.com/FRSOURCE/autoresize-textarea/commit/2b4f25716019c702548bdafa1eb31ea92f7f080d)), closes [#132](https://github.com/FRSOURCE/autoresize-textarea/issues/132)
+
+
+### BREAKING CHANGES
+
+* changed output bundle target from es5 to es6
+
 ## [1.3.90](https://github.com/FRSOURCE/autoresize-textarea/compare/v1.3.89...v1.3.90) (2023-08-21)
 
 ## [1.3.89](https://github.com/FRSOURCE/autoresize-textarea/compare/v1.3.88...v1.3.89) (2023-08-14)
