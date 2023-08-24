@@ -1,5 +1,24 @@
 const ATTRIBUTE_NAME = "data-frs-autoresize-textarea";
 
+const cacheParentsScrollTop = (element: Element) => {
+  const scrollTopMap = new Map<Element | HTMLElement, number>();
+
+  do {
+    scrollTopMap.set(element, element.scrollTop);
+  } while ((element = element?.parentNode as Element) instanceof Element);
+
+  return () => {
+    for (const [element, scrollTop] of scrollTopMap) {
+      if ("style" in element) {
+        const currentValue = element.style.scrollBehavior;
+        element.style.scrollBehavior = "auto";
+        element.scrollTop = scrollTop;
+        element.style.scrollBehavior = currentValue;
+      } else element.scrollTop = scrollTop;
+    }
+  };
+};
+
 export const attach = (element: HTMLTextAreaElement) => {
   if (element.getAttribute(ATTRIBUTE_NAME)) return;
   element.setAttribute(ATTRIBUTE_NAME, "");
@@ -10,13 +29,17 @@ export const attach = (element: HTMLTextAreaElement) => {
       element.scrollHeight > element.clientHeight ||
       prevHeight === element.style.height
     ) {
-      const currentOverflow = element.style.overflow;
+      const resetScrollTops = cacheParentsScrollTop(element);
       element.style.height = "auto";
+
+      const currentValue = element.style.overflow;
       element.style.overflow = "hidden";
       element.style.height = prevHeight = `${
         element.scrollHeight + (element.offsetHeight - element.clientHeight)
       }px`;
-      element.style.overflow = currentOverflow;
+      element.style.overflow = currentValue;
+
+      resetScrollTops();
     }
   };
 
