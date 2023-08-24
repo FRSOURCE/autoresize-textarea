@@ -33,7 +33,7 @@
   <br>
   <i>Tiny library which make your textareas fluid.
     <br>Mobile &amp; desktop-friendly
-    <br>Performant & with small bundle size (less than 390B!)
+    <br>Performant & with small bundle size (less than 1.2kB!)
     <br>Published as separate bundles for JS ES5 or modern browsers thanks to <a href="https://www.npmjs.com/package/microbundle">microbundle</a>
     <br>Written completely in <a href="https://www.typescriptlang.org">typescript</a></i>
     <br>Published under <a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a> license</i>
