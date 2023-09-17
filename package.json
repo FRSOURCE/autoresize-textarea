@@ -47,8 +47,8 @@
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/commit-analyzer": "10.0.4",
     "@semantic-release/git": "10.0.1",
-    "@semantic-release/github": "9.0.5",
-    "@semantic-release/npm": "10.0.5",
+    "@semantic-release/github": "9.0.6",
+    "@semantic-release/npm": "10.0.6",
     "@semantic-release/release-notes-generator": "11.0.7",
     "@typescript-eslint/eslint-plugin": "6.6.0",
     "@typescript-eslint/parser": "6.6.0",
@@ -58,13 +58,13 @@
     "microbundle": "0.15.1",
     "prettier": "3.0.3",
     "rimraf": "^5.0.0",
-    "semantic-release": "21.1.1",
+    "semantic-release": "21.1.2",
     "typescript": "5.2.2"
   },
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "pnpm@8.7.4",
+  "packageManager": "pnpm@8.7.6",
   "files": [
     "dist",
     "package.json"
