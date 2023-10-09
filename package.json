@@ -47,7 +47,7 @@
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/commit-analyzer": "11.0.0",
     "@semantic-release/git": "10.0.1",
-    "@semantic-release/github": "9.0.7",
+    "@semantic-release/github": "9.2.1",
     "@semantic-release/npm": "11.0.0",
     "@semantic-release/release-notes-generator": "12.0.0",
     "@typescript-eslint/eslint-plugin": "6.7.4",
@@ -64,7 +64,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "pnpm@8.7.6",
+  "packageManager": "pnpm@8.9.0",
   "files": [
     "dist",
     "package.json"
