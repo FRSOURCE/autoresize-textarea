@@ -78,7 +78,10 @@
 &lt;<b>script</b>&gt;
   <b>import</b> { attach } <b>from</b> <u>"@frsource/autoresize-textarea"</u>;
   <b>const</b> textarea = document.<i>querySelector</i>(<u>"textarea"</u>);
-  attach(textarea);
+  <b>const</b> { detach } = attach(textarea);
+
+  // detach plugin whenever you want (e.g. on component unmount)
+  // detach();
 &lt;/<b>script</b>&gt;</code></pre>
           </details>
 
@@ -88,7 +91,10 @@
   
 &lt;<b>script</b>&gt;
   <b>const</b> textarea = document.<i>querySelector</i>(<u>"textarea"</u>);
-  window.autoresizeTextarea.<i>attach</i>(textarea);
+  <b>const</b> { detach } = window.autoresizeTextarea.<i>attach</i>(textarea);
+  
+  // detach plugin whenever you want (e.g. on component unmount)
+  // detach();
 &lt;/<b>script</b>&gt;</code></pre>
           </details>
         </article>
