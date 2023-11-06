@@ -58,7 +58,37 @@ pnpm add @frsource/autoresize-textarea
 ```ts
 import { attach } from "@frsource/autoresize-textarea";
 const textarea = document.querySelector("textarea");
-attach(textarea);
+const { detach } = attach(textarea);
+
+// detach plugin whenever you want (e.g. on component unmount)
+detach();
+```
+
+### UMD
+
+```js
+const textarea = document.querySelector("textarea");
+const { detach } = window.autoresizeTextarea.attach(textarea);
+
+// detach plugin whenever you want (e.g. on component unmount)
+detach();
+```
+
+For working example, check out [our demo](https://www.frsource.org/autoresize-textarea).
+
+## Detaching on element unmount
+
+Remember to detach `autoresize` plugin before umount/removal of textarea element:
+
+### Modern JS/Typescript
+
+```ts
+import { attach } from "@frsource/autoresize-textarea";
+const textarea = document.querySelector("textarea");
+const { detach } = attach(textarea);
+
+detach();
+textarea.remove();
 ```
 
 ### UMD
@@ -68,7 +98,8 @@ const textarea = document.querySelector("textarea");
 window.autoresizeTextarea.attach(textarea);
 ```
 
-For working example, check out [our demo](https://www.frsource.org/autoresize-textarea).
+// remember to detach autoresize when you want to unmount the plugin/component
+detach();
 
 ## Questions
 
