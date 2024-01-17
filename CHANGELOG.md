@@ -1,3 +1,10 @@
+## [2.0.43](https://github.com/FRSOURCE/autoresize-textarea/compare/v2.0.42...v2.0.43) (2024-01-17)
+
+
+### Bug Fixes
+
+* move exports.types field above export.default to support nextjs ([8c9c654](https://github.com/FRSOURCE/autoresize-textarea/commit/8c9c6541054a020362c3c4178fcb2e04cf800ae8))
+
 ## [2.0.42](https://github.com/FRSOURCE/autoresize-textarea/compare/v2.0.41...v2.0.42) (2024-01-17)
 
 
