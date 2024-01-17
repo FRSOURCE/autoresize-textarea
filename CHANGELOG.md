@@ -1,3 +1,10 @@
+## [2.0.42](https://github.com/FRSOURCE/autoresize-textarea/compare/v2.0.41...v2.0.42) (2024-01-17)
+
+
+### Bug Fixes
+
+* add types field to package exports ([0848882](https://github.com/FRSOURCE/autoresize-textarea/commit/0848882fb3e853c58c96e2fe2eb68f7f76c7a549))
+
 ## [2.0.41](https://github.com/FRSOURCE/autoresize-textarea/compare/v2.0.40...v2.0.41) (2024-01-15)
 
 ## [2.0.40](https://github.com/FRSOURCE/autoresize-textarea/compare/v2.0.39...v2.0.40) (2024-01-15)
