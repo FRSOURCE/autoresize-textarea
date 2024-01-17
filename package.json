@@ -6,7 +6,8 @@
   "source": "src/index.ts",
   "exports": {
     "require": "./dist/index.js",
-    "default": "./dist/index.modern.mjs"
+    "default": "./dist/index.modern.mjs",
+    "types": "./dist/index.d.ts"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
