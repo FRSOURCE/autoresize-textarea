@@ -69,5 +69,6 @@
   "files": [
     "dist",
     "package.json"
-  ]
+  ],
+  "funding": "https://buymeacoffee.com/frsource"
 }
