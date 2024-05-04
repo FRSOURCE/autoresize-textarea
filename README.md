@@ -2,14 +2,14 @@
   <a href="https://www.npmjs.com/package/@frsource/autoresize-textarea">
     <img src="https://img.shields.io/npm/v/@frsource/autoresize-textarea" alt="NPM version badge">
   </a>
+  <a href="https://bundlejs.com/?q=%40frsource%2Fautoresize-textarea">
+    <img src="https://deno.bundlejs.com/badge?q=@frsource/autoresize-textarea" alt="GZIP size calculated by bundlejs.com">
+  </a>
   <a href="https://bundlephobia.com/result?p=@frsource/autoresize-textarea" title="Visit bundlephobia for more details!">
     <img src="https://img.shields.io/bundlephobia/minzip/@frsource/autoresize-textarea" alt="Core bundle size badge. Data from bundlephobia.com">
   </a>
   <a href="https://github.com/semantic-release/semantic-release">
     <img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" alt="semantic-relase badge">
-  </a>
-  <a href="https://bundlephobia.com/result?p=@frsource/autoresize-textarea">
-    <img src="https://badgen.net/bundlephobia/tree-shaking/@frsource/autoresize-textarea" alt="Tree shaking supported">
   </a>
   <a href="https://github.com/FRSOURCE/autoresize-textarea/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/FRSOURCE/autoresize-textarea" alt="license MIT badge">
