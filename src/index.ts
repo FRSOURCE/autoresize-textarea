@@ -1,4 +1,4 @@
-const ATTRIBUTE_NAME = "data-frs-autoresize-textarea";
+const ATTRIBUTE_NAME = 'data-frs-autoresize-textarea';
 
 const cacheParentsScrollTop = (element: Element) => {
   const scrollTopMap = new Map<Element | HTMLElement, number>();
@@ -9,9 +9,9 @@ const cacheParentsScrollTop = (element: Element) => {
 
   return () => {
     for (const [element, scrollTop] of scrollTopMap) {
-      if ("style" in element) {
+      if ('style' in element) {
         const currentValue = element.style.scrollBehavior;
-        element.style.scrollBehavior = "auto";
+        element.style.scrollBehavior = 'auto';
         element.scrollTop = scrollTop;
         element.style.scrollBehavior = currentValue;
       } else element.scrollTop = scrollTop;
@@ -21,19 +21,19 @@ const cacheParentsScrollTop = (element: Element) => {
 
 export const attach = (element: HTMLTextAreaElement) => {
   if (element.getAttribute(ATTRIBUTE_NAME)) return;
-  element.setAttribute(ATTRIBUTE_NAME, "");
+  element.setAttribute(ATTRIBUTE_NAME, '');
 
-  let prevHeight = "";
+  let prevHeight = '';
   const inputHandler = () => {
     if (
       element.scrollHeight > element.clientHeight ||
       prevHeight === element.style.height
     ) {
       const resetScrollTops = cacheParentsScrollTop(element);
-      element.style.height = "auto";
+      element.style.height = 'auto';
 
       const currentValue = element.style.overflow;
-      element.style.overflow = "hidden";
+      element.style.overflow = 'hidden';
       element.style.height = prevHeight = `${
         element.scrollHeight + (element.offsetHeight - element.clientHeight)
       }px`;
@@ -43,15 +43,15 @@ export const attach = (element: HTMLTextAreaElement) => {
     }
   };
 
-  element.style.boxSizing = "border-box";
+  element.style.boxSizing = 'border-box';
 
   inputHandler();
 
-  element.addEventListener("input", inputHandler);
+  element.addEventListener('input', inputHandler);
 
   const elementPrototype = Object.getPrototypeOf(element);
-  const descriptor = Object.getOwnPropertyDescriptor(elementPrototype, "value");
-  Object.defineProperty(element, "value", {
+  const descriptor = Object.getOwnPropertyDescriptor(elementPrototype, 'value');
+  Object.defineProperty(element, 'value', {
     ...descriptor,
     set() {
       descriptor?.set?.apply(
@@ -65,7 +65,7 @@ export const attach = (element: HTMLTextAreaElement) => {
   return {
     detach() {
       element.removeAttribute(ATTRIBUTE_NAME);
-      element.removeEventListener("input", inputHandler);
+      element.removeEventListener('input', inputHandler);
     },
     update: inputHandler,
   };
