@@ -53,8 +53,8 @@ pnpm add @frsource/autoresize-textarea
 ### Modern JS/Typescript
 
 ```ts
-import { attach } from "@frsource/autoresize-textarea";
-const textarea = document.querySelector("textarea");
+import { attach } from '@frsource/autoresize-textarea';
+const textarea = document.querySelector('textarea');
 const { detach } = attach(textarea);
 
 // detach plugin whenever you want (e.g. on component unmount)
@@ -64,7 +64,7 @@ const { detach } = attach(textarea);
 ### UMD
 
 ```js
-const textarea = document.querySelector("textarea");
+const textarea = document.querySelector('textarea');
 const { detach } = window.autoresizeTextarea.attach(textarea);
 
 // detach plugin whenever you want (e.g. on component unmount)
