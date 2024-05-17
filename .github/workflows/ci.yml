@@ -16,7 +16,7 @@ jobs:
       - uses: pnpm/action-setup@v3
       - uses: actions/setup-node@v4
         with:
-          node-version: '20.x'
+          node-version-file: '.nvmrc'
           cache: 'pnpm'
       - name: remove git auth
         run: git config --unset http.https://github.com/.extraheader
@@ -55,7 +55,7 @@ jobs:
       - uses: pnpm/action-setup@v3
       - uses: actions/setup-node@v4
         with:
-          node-version: '20.x'
+          node-version-file: '.nvmrc'
           cache: 'pnpm'
       - name: remove git auth
         run: git config --unset http.https://github.com/.extraheader
