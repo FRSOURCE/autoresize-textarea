@@ -1,3 +1,10 @@
+## [2.0.70](https://github.com/FRSOURCE/autoresize-textarea/compare/v2.0.69...v2.0.70) (2024-05-17)
+
+
+### Bug Fixes
+
+* critical vulnerability CVE-2023-45133 ([f8e123c](https://github.com/FRSOURCE/autoresize-textarea/commit/f8e123ca109e4c60d619facc99ac04aeba200b18))
+
 ## [2.0.69](https://github.com/FRSOURCE/autoresize-textarea/compare/v2.0.68...v2.0.69) (2024-05-13)
 
 ## [2.0.68](https://github.com/FRSOURCE/autoresize-textarea/compare/v2.0.67...v2.0.68) (2024-05-06)
