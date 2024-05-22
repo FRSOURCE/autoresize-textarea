@@ -23,7 +23,7 @@
     "release:test": "pnpm release --no-git-tag-version --no-push --skip-npm",
     "clean": "pnpm rimraf \"dist/**/*\""
   },
-  "homepage": "https://github.com/FRSOURCE/autoresize-textarea/",
+  "homepage": "https://www.frsource.org/autoresize-textarea/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FRSOURCE/autoresize-textarea.git"
