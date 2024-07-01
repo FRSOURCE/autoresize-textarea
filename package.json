@@ -46,17 +46,17 @@
     "@frsource/prettier-config": "1.9.0",
     "@frsource/semantic-release-config": "1.9.0",
     "eslint": "9.6.0",
-    "globals": "15.5.0",
+    "globals": "15.7.0",
     "microbundle": "0.15.1",
     "prettier": "3.3.2",
     "rimraf": "5.0.7",
     "semantic-release": "24.0.0",
-    "typescript": "5.4.5"
+    "typescript": "5.5.3"
   },
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "pnpm@9.3.0",
+  "packageManager": "pnpm@9.4.0",
   "files": [
     "dist",
     "package.json"
