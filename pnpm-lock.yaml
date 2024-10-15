@@ -9,20 +9,20 @@ importers:
   .:
     devDependencies:
       '@frsource/eslint-config':
-        specifier: 1.19.0
-        version: 1.19.0(eslint@9.12.0)(typescript@5.6.3)
+        specifier: 1.20.0
+        version: 1.20.0(eslint@9.12.0)(typescript@5.6.3)
       '@frsource/prettier-config':
-        specifier: 1.13.0
-        version: 1.13.0(eslint@9.12.0)
+        specifier: 1.14.0
+        version: 1.14.0(eslint@9.12.0)
       '@frsource/semantic-release-config':
-        specifier: 1.18.0
-        version: 1.18.0(semantic-release@24.1.2(typescript@5.6.3))
+        specifier: 1.20.0
+        version: 1.20.0(semantic-release@24.1.2(typescript@5.6.3))
       eslint:
         specifier: 9.12.0
         version: 9.12.0
       globals:
-        specifier: 15.10.0
-        version: 15.10.0
+        specifier: 15.11.0
+        version: 15.11.0
       microbundle:
         specifier: 0.15.1
         version: 0.15.1
@@ -719,19 +719,19 @@ packages:
     resolution: {integrity: sha512-vH9PiIMMwvhCx31Af3HiGzsVNULDbyVkHXwlemn/B0TFj/00ho3y55efXrUZTfQipxoHC5u4xq6zblww1zm1Ig==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@frsource/eslint-config@1.19.0':
-    resolution: {integrity: sha512-q6cYSxPtOHqtskGptDLY039EtH1ShGwYALlKnPUe2fXV2JJhAFOSCbuxBdYa5GVUu2CKVKv4RB9uW48k2QfEVA==}
+  '@frsource/eslint-config@1.20.0':
+    resolution: {integrity: sha512-77t7NlKrTKxB+YDZ33001ykMARCAt4XLkXloCNESqi0hOtVX9j0+c3zYlawpHLgRIV8moImLvpag2+y6WbHwDQ==}
     peerDependencies:
       eslint: '>= 9'
       typescript: '>= 5.0.0'
 
-  '@frsource/prettier-config@1.13.0':
-    resolution: {integrity: sha512-pTN0F2Zb1ABDgHYWOrYZxwIj+ElAQUcWlS8Xs9q/6ryFgl6w1pVst7KAvLqXAfJrCp/BJ4tfddlSbCpQT15FMw==}
+  '@frsource/prettier-config@1.14.0':
+    resolution: {integrity: sha512-qxFxSqj8nPT2RQpxfNwXTOmTgKFGjpIuM4crgeaMdchi8l22Morp+S8nzMURIBcscDGzs0Ir2VcZpSQjyeRkBA==}
     peerDependencies:
       eslint: '>= 3'
 
-  '@frsource/semantic-release-config@1.18.0':
-    resolution: {integrity: sha512-o7obliyRNFUhX21YqQcKkkNUHYN1JMvFRVf8LkrWpR4Xq7ob/xqOJSrqN1b8iZWLrtjxv8kH+oDvtIeI33w2Vg==}
+  '@frsource/semantic-release-config@1.20.0':
+    resolution: {integrity: sha512-r9CYpR9QM7aD6YSRYTqt93kuE6nNwtWQo5UkKsdRNdFGcSPSoqafZh6xfkeYWL2niAvwduJld+D3U8pwslwTSQ==}
     peerDependencies:
       semantic-release: '>= 24'
 
@@ -1855,8 +1855,8 @@ packages:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
     engines: {node: '>=18'}
 
-  globals@15.10.0:
-    resolution: {integrity: sha512-tqFIbz83w4Y5TCbtgjZjApohbuh7K9BxGYFm7ifwDR240tvdb7P9x+/9VvUKlmkPoiknoJtanI8UOrqxS3a7lQ==}
+  globals@15.11.0:
+    resolution: {integrity: sha512-yeyNSjdbyVaWurlwCpcA6XNBrHTMIeDdj0/hnvX/OLJ9ekOXYbLsLinH/MucQyGvNnXhidTdNhTtJaffL2sMfw==}
     engines: {node: '>=18'}
 
   globalthis@1.0.4:
@@ -4379,24 +4379,24 @@ snapshots:
     dependencies:
       levn: 0.4.1
 
-  '@frsource/eslint-config@1.19.0(eslint@9.12.0)(typescript@5.6.3)':
+  '@frsource/eslint-config@1.20.0(eslint@9.12.0)(typescript@5.6.3)':
     dependencies:
       '@eslint/js': 9.12.0
       '@typescript-eslint/eslint-plugin': 8.8.0(@typescript-eslint/parser@8.8.0(eslint@9.12.0)(typescript@5.6.3))(eslint@9.12.0)(typescript@5.6.3)
       '@typescript-eslint/parser': 8.8.0(eslint@9.12.0)(typescript@5.6.3)
       eslint: 9.12.0
       eslint-config-prettier: 9.1.0(eslint@9.12.0)
-      globals: 15.10.0
+      globals: 15.11.0
       typescript: 5.6.3
       typescript-eslint: 8.5.0(eslint@9.12.0)(typescript@5.6.3)
     transitivePeerDependencies:
       - supports-color
 
-  '@frsource/prettier-config@1.13.0(eslint@9.12.0)':
+  '@frsource/prettier-config@1.14.0(eslint@9.12.0)':
     dependencies:
       eslint: 9.12.0
 
-  '@frsource/semantic-release-config@1.18.0(semantic-release@24.1.2(typescript@5.6.3))':
+  '@frsource/semantic-release-config@1.20.0(semantic-release@24.1.2(typescript@5.6.3))':
     dependencies:
       '@semantic-release/changelog': 6.0.3(semantic-release@24.1.2(typescript@5.6.3))
       '@semantic-release/commit-analyzer': 13.0.0(semantic-release@24.1.2(typescript@5.6.3))
@@ -5777,7 +5777,7 @@ snapshots:
 
   globals@14.0.0: {}
 
-  globals@15.10.0: {}
+  globals@15.11.0: {}
 
   globalthis@1.0.4:
     dependencies:
