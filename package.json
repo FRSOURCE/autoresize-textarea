@@ -50,13 +50,13 @@
     "microbundle": "0.15.1",
     "prettier": "3.4.2",
     "rimraf": "6.0.1",
-    "semantic-release": "24.2.0",
+    "semantic-release": "24.2.1",
     "typescript": "5.7.2"
   },
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "pnpm@9.15.2",
+  "packageManager": "pnpm@9.15.3",
   "files": [
     "dist",
     "package.json"
