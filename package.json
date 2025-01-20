@@ -45,7 +45,7 @@
     "@frsource/eslint-config": "1.33.0",
     "@frsource/prettier-config": "1.21.0",
     "@frsource/semantic-release-config": "1.38.0",
-    "eslint": "9.17.0",
+    "eslint": "9.18.0",
     "globals": "15.14.0",
     "microbundle": "0.15.1",
     "prettier": "3.4.2",
