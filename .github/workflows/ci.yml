@@ -18,8 +18,6 @@ jobs:
         with:
           node-version-file: '.nvmrc'
           cache: 'pnpm'
-      - name: remove git auth
-        run: git config --unset http.https://github.com/.extraheader
       - run: pnpm install --frozen-lockfile
 
   lint:
@@ -33,11 +31,8 @@ jobs:
         with:
           node-version-file: '.nvmrc'
           cache: 'pnpm'
-      - name: remove git auth
-        run: git config --unset http.https://github.com/.extraheader
       - run: pnpm install --frozen-lockfile
-      - name: Lint
-        run: pnpm lint
+      - run: pnpm lint
 
   build-and-release:
     name: build and release
@@ -57,18 +52,8 @@ jobs:
         with:
           node-version-file: '.nvmrc'
           cache: 'pnpm'
-      - name: remove git auth
-        run: git config --unset http.https://github.com/.extraheader
       - run: pnpm install --frozen-lockfile
-      - name: Authenticate with Registry
-        run: |
-          echo "registry=http://registry.npmjs.org/" >> .npmrc
-          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
-          npm whoami
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: build
-        run: pnpm build
+      - run: pnpm build
       - name: release package
         if: ${{ success() && github.actor != 'dependabot[bot]' && github.ref == 'refs/heads/main' && github.event_name == 'push' }}
         run: pnpm release:ci
