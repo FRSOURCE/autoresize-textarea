@@ -9,20 +9,20 @@ importers:
   .:
     devDependencies:
       '@frsource/eslint-config':
-        specifier: 1.72.0
-        version: 1.72.0(eslint@10.0.2)(typescript@5.9.3)
+        specifier: 1.73.0
+        version: 1.73.0(eslint@10.0.2)(typescript@5.9.3)
       '@frsource/prettier-config':
-        specifier: 1.40.0
-        version: 1.40.0(prettier@3.8.1)
+        specifier: 1.41.0
+        version: 1.41.0(prettier@3.8.1)
       '@frsource/semantic-release-config':
-        specifier: 1.103.0
-        version: 1.103.0(semantic-release@25.0.3(typescript@5.9.3))
+        specifier: 1.105.0
+        version: 1.105.0(semantic-release@25.0.3(typescript@5.9.3))
       eslint:
         specifier: 10.0.2
         version: 10.0.2
       globals:
-        specifier: 17.3.0
-        version: 17.3.0
+        specifier: 17.4.0
+        version: 17.4.0
       microbundle:
         specifier: 0.15.1
         version: 0.15.1
@@ -736,19 +736,19 @@ packages:
     resolution: {integrity: sha512-bIZEUzOI1jkhviX2cp5vNyXQc6olzb2ohewQubuYlMXZ2Q/XjBO0x0XhGPvc9fjSIiUN0vw+0hq53BJ4eQSJKQ==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
 
-  '@frsource/eslint-config@1.72.0':
-    resolution: {integrity: sha512-yLnwlZGF3S5zCZtx5jVPAD/lGNkM1h9rGW81x4+bMjlAJWplJXVZBTGFONrLkyFKcCqaD9n3Cimk78ySn3y16w==}
+  '@frsource/eslint-config@1.73.0':
+    resolution: {integrity: sha512-Jung5LfpDLH7nkWjESDVlePa8ibuHVMDY0QbZ5sTz8iUtMwcTCR+ehkMOyL8Vb9+7h2qLuc0nVqaFI3D6Zss8Q==}
     peerDependencies:
       eslint: '>= 10'
       typescript: '>= 5.0.0'
 
-  '@frsource/prettier-config@1.40.0':
-    resolution: {integrity: sha512-xixOzoUdIiRybKkZVf2PO+0yaALwDy3hx6UIoFmksAhI5OaxZqg2uNhuziF/06d66LynQhJG3f1UL6pTQRbTGQ==}
+  '@frsource/prettier-config@1.41.0':
+    resolution: {integrity: sha512-Apt8wByajQYmNIH22O5E0WkafV/RmJs8CYY8CvgqTIJoQhUmTuJ/UXTheUgaI6GZhmiMuc4H+IwSTd4T1Fx6Aw==}
     peerDependencies:
       prettier: '>= 3'
 
-  '@frsource/semantic-release-config@1.103.0':
-    resolution: {integrity: sha512-q257j4s7XwxY/P0+V0SyyyksuoBrd2G7UuBzuZ0A9T3BP0j6fFM2iQIogonCiq5ewlrR883XmLpzYEzyjoPjhQ==}
+  '@frsource/semantic-release-config@1.105.0':
+    resolution: {integrity: sha512-SEFNmgYwqzqOtKHaWHKkB8pdDnhdmdywf7+szWqxFWrerHGygVZMHKSY6cK57fqLVQt2PSy2JzE0ApRlhYaj8g==}
     peerDependencies:
       semantic-release: '>= 24'
 
@@ -940,6 +940,12 @@ packages:
 
   '@semantic-release/npm@13.1.4':
     resolution: {integrity: sha512-z5Fn9ftK1QQgFxMSuOd3DtYbTl4hWI2trCEvZcEJMQJy1/OBR0WHcxqzfVun455FSkHML8KgvPxJEa9MtZIBsg==}
+    engines: {node: ^22.14.0 || >= 24.10.0}
+    peerDependencies:
+      semantic-release: '>=20.1.0'
+
+  '@semantic-release/npm@13.1.5':
+    resolution: {integrity: sha512-Hq5UxzoatN3LHiq2rTsWS54nCdqJHlsssGERCo8WlvdfFA9LoN0vO+OuKVSjtNapIc/S8C2LBj206wKLHg62mg==}
     engines: {node: ^22.14.0 || >= 24.10.0}
     peerDependencies:
       semantic-release: '>=20.1.0'
@@ -1703,10 +1709,6 @@ packages:
     resolution: {integrity: sha512-wXZV5emFEjrridIgED11OoUKLxiYjAcqot/NJdAkOhlJ+vGzwhOAfcG5OX1jP+S0PcjEn8bdMJv+g2jwQ3Onig==}
     engines: {node: '>=8'}
 
-  find-up-simple@1.0.0:
-    resolution: {integrity: sha512-q7Us7kcjj2VMePAa02hDAF6d+MzsdsAWEwYyOpwUtlerRBkOEPBCRZrAV4XfcSN8fHAgaD0hP7miwoay6DCprw==}
-    engines: {node: '>=18'}
-
   find-up-simple@1.0.1:
     resolution: {integrity: sha512-afd4O7zpqHeRyg4PfDQsXmlDe2PfdHtJt6Akt8jOWaApLOZk5JXs6VMR29lz03pRe9mpykrRCYIYxaJYcfpncQ==}
     engines: {node: '>=18'}
@@ -1831,8 +1833,8 @@ packages:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
     engines: {node: '>=4'}
 
-  globals@17.3.0:
-    resolution: {integrity: sha512-yMqGUQVVCkD4tqjOJf3TnrvaaHDMYp4VlUSObbkIiuCPe/ofdMBFIAcBbCSRFWOnos6qRiTVStDwqPLUclaxIw==}
+  globals@17.4.0:
+    resolution: {integrity: sha512-hjrNztw/VajQwOLsMNT1cbJiH2muO3OROCHnbehc8eY5JyD2gqz4AcMHPqgaOR59DjgUjYAYLeH699g/eWi2jw==}
     engines: {node: '>=18'}
 
   globalthis@1.0.4:
@@ -2397,6 +2399,10 @@ packages:
   normalize-url@8.0.1:
     resolution: {integrity: sha512-IO9QvjUMWxPQQhs60oOu10CRkWCiZzSUkzbXGGV9pviYl1fXYcvkzQ5jV9z8Y6un8ARoVRl4EtC6v6jNqbaJ/w==}
     engines: {node: '>=14.16'}
+
+  normalize-url@9.0.0:
+    resolution: {integrity: sha512-z9nC87iaZXXySbWWtTHfCFJyFvKaUAW6lODhikG7ILSbVgmwuFjUqkgnheHvAUcGedO29e2QGBRXMUD64aurqQ==}
+    engines: {node: '>=20'}
 
   npm-run-path@4.0.1:
     resolution: {integrity: sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==}
@@ -4373,30 +4379,30 @@ snapshots:
       '@eslint/core': 1.1.0
       levn: 0.4.1
 
-  '@frsource/eslint-config@1.72.0(eslint@10.0.2)(typescript@5.9.3)':
+  '@frsource/eslint-config@1.73.0(eslint@10.0.2)(typescript@5.9.3)':
     dependencies:
       '@eslint/js': 10.0.1(eslint@10.0.2)
       '@typescript-eslint/eslint-plugin': 8.56.1(@typescript-eslint/parser@8.56.1(eslint@10.0.2)(typescript@5.9.3))(eslint@10.0.2)(typescript@5.9.3)
       '@typescript-eslint/parser': 8.56.1(eslint@10.0.2)(typescript@5.9.3)
       eslint: 10.0.2
       eslint-config-prettier: 10.1.8(eslint@10.0.2)
-      globals: 17.3.0
+      globals: 17.4.0
       typescript: 5.9.3
       typescript-eslint: 8.56.1(eslint@10.0.2)(typescript@5.9.3)
     transitivePeerDependencies:
       - supports-color
 
-  '@frsource/prettier-config@1.40.0(prettier@3.8.1)':
+  '@frsource/prettier-config@1.41.0(prettier@3.8.1)':
     dependencies:
       prettier: 3.8.1
 
-  '@frsource/semantic-release-config@1.103.0(semantic-release@25.0.3(typescript@5.9.3))':
+  '@frsource/semantic-release-config@1.105.0(semantic-release@25.0.3(typescript@5.9.3))':
     dependencies:
       '@semantic-release/changelog': 6.0.3(semantic-release@25.0.3(typescript@5.9.3))
       '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.3(typescript@5.9.3))
       '@semantic-release/git': 10.0.1(semantic-release@25.0.3(typescript@5.9.3))
       '@semantic-release/github': 12.0.6(semantic-release@25.0.3(typescript@5.9.3))
-      '@semantic-release/npm': 13.1.4(semantic-release@25.0.3(typescript@5.9.3))
+      '@semantic-release/npm': 13.1.5(semantic-release@25.0.3(typescript@5.9.3))
       '@semantic-release/release-notes-generator': 14.1.0(semantic-release@25.0.3(typescript@5.9.3))
       semantic-release: 25.0.3(typescript@5.9.3)
     transitivePeerDependencies:
@@ -4640,6 +4646,25 @@ snapshots:
       lodash-es: 4.17.21
       nerf-dart: 1.0.0
       normalize-url: 8.0.1
+      npm: 11.11.0
+      rc: 1.2.8
+      read-pkg: 10.1.0
+      registry-auth-token: 5.0.2
+      semantic-release: 25.0.3(typescript@5.9.3)
+      semver: 7.7.4
+      tempy: 3.1.0
+
+  '@semantic-release/npm@13.1.5(semantic-release@25.0.3(typescript@5.9.3))':
+    dependencies:
+      '@actions/core': 3.0.0
+      '@semantic-release/error': 4.0.0
+      aggregate-error: 5.0.0
+      env-ci: 11.2.0
+      execa: 9.1.0
+      fs-extra: 11.2.0
+      lodash-es: 4.17.21
+      nerf-dart: 1.0.0
+      normalize-url: 9.0.0
       npm: 11.11.0
       rc: 1.2.8
       read-pkg: 10.1.0
@@ -5553,8 +5578,6 @@ snapshots:
       make-dir: 3.1.0
       pkg-dir: 4.2.0
 
-  find-up-simple@1.0.0: {}
-
   find-up-simple@1.0.1: {}
 
   find-up@2.1.0:
@@ -5689,7 +5712,7 @@ snapshots:
 
   globals@11.12.0: {}
 
-  globals@17.3.0: {}
+  globals@17.4.0: {}
 
   globalthis@1.0.4:
     dependencies:
@@ -6220,6 +6243,8 @@ snapshots:
 
   normalize-url@8.0.1: {}
 
+  normalize-url@9.0.0: {}
+
   npm-run-path@4.0.1:
     dependencies:
       path-key: 3.1.1
@@ -6641,7 +6666,7 @@ snapshots:
 
   read-package-up@11.0.0:
     dependencies:
-      find-up-simple: 1.0.0
+      find-up-simple: 1.0.1
       read-pkg: 9.0.1
       type-fest: 4.41.0
 
