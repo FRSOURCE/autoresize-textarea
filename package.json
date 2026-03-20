@@ -42,9 +42,9 @@
   "author": "Jakub Freisler <jakub@frsource.org>",
   "license": "MIT",
   "devDependencies": {
-    "@frsource/eslint-config": "1.73.0",
-    "@frsource/prettier-config": "1.41.0",
-    "@frsource/semantic-release-config": "1.105.0",
+    "@frsource/eslint-config": "1.74.0",
+    "@frsource/prettier-config": "1.42.0",
+    "@frsource/semantic-release-config": "1.106.0",
     "eslint": "10.0.3",
     "globals": "17.4.0",
     "microbundle": "0.15.1",
@@ -56,7 +56,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "pnpm@10.30.3",
+  "packageManager": "pnpm@10.32.1",
   "files": [
     "dist",
     "package.json"
