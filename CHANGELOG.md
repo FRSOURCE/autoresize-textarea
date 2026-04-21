@@ -1,3 +1,10 @@
+## [2.0.196](https://github.com/FRSOURCE/autoresize-textarea/compare/v2.0.195...v2.0.196) (2026-04-21)
+
+
+### Bug Fixes
+
+* .d.ts file in dist package ([b610bb5](https://github.com/FRSOURCE/autoresize-textarea/commit/b610bb50c3d4f88a3f4367e6ffc8c3b8c261ccd7))
+
 ## [2.0.195](https://github.com/FRSOURCE/autoresize-textarea/compare/v2.0.194...v2.0.195) (2026-04-20)
 
 ## [2.0.194](https://github.com/FRSOURCE/autoresize-textarea/compare/v2.0.193...v2.0.194) (2026-04-20)
