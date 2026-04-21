@@ -3,7 +3,8 @@
     "target": "es6",
     "lib": ["es6", "dom"],
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "rootDir": "./src"
   },
   "include": ["src/**/*.ts"]
 }
