@@ -15,8 +15,8 @@ importers:
         specifier: 1.47.2
         version: 1.47.2(prettier@3.8.4)
       '@frsource/semantic-release-config':
-        specifier: 1.116.2
-        version: 1.116.2(semantic-release@25.0.5(typescript@6.0.3))
+        specifier: 1.116.4
+        version: 1.116.4(semantic-release@25.0.5(typescript@6.0.3))
       eslint:
         specifier: 10.5.0
         version: 10.5.0
@@ -747,8 +747,8 @@ packages:
     peerDependencies:
       prettier: '>= 3'
 
-  '@frsource/semantic-release-config@1.116.2':
-    resolution: {integrity: sha512-ySbUxeUiwO4eiNIjTX3DP4sq0KpOLn0Ao9B3ADgRK+6gLYyRKlnil0iYNITVmpceG2ffe7rwhWdjTVhlUDaPDA==}
+  '@frsource/semantic-release-config@1.116.4':
+    resolution: {integrity: sha512-T6PH8eJA2bzAjXsxNaMJmYrWz2cLyd9Vf/Y2yaH3cRdOPVnL+96/DlpOwe2kCHezy6jEKKy//Lv+GgR8POTtNw==}
     peerDependencies:
       semantic-release: '>= 24'
 
@@ -934,6 +934,12 @@ packages:
 
   '@semantic-release/github@12.0.8':
     resolution: {integrity: sha512-tej5AAgK5X9wHRoDmYhecMXEHEkFeGOY1XsEblKxu8pIQwahzf1STYyr7iPU6Lpbg6C5I3N2w/ocXrBo+L7jhw==}
+    engines: {node: ^22.14.0 || >= 24.10.0}
+    peerDependencies:
+      semantic-release: '>=24.1.0'
+
+  '@semantic-release/github@12.0.9':
+    resolution: {integrity: sha512-ODIqb0V3QqndipryEEiaBxUQCFjvv7Oese5Dt4omMGa60YRNEW0Sx3K+zri0uac2Y6S9nOlMehciWIzvvRCTGQ==}
     engines: {node: ^22.14.0 || >= 24.10.0}
     peerDependencies:
       semantic-release: '>=24.1.0'
@@ -4359,12 +4365,12 @@ snapshots:
     dependencies:
       prettier: 3.8.4
 
-  '@frsource/semantic-release-config@1.116.2(semantic-release@25.0.5(typescript@6.0.3))':
+  '@frsource/semantic-release-config@1.116.4(semantic-release@25.0.5(typescript@6.0.3))':
     dependencies:
       '@semantic-release/changelog': 6.0.3(semantic-release@25.0.5(typescript@6.0.3))
       '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.5(typescript@6.0.3))
       '@semantic-release/git': 10.0.1(semantic-release@25.0.5(typescript@6.0.3))
-      '@semantic-release/github': 12.0.8(semantic-release@25.0.5(typescript@6.0.3))
+      '@semantic-release/github': 12.0.9(semantic-release@25.0.5(typescript@6.0.3))
       '@semantic-release/npm': 13.1.5(semantic-release@25.0.5(typescript@6.0.3))
       '@semantic-release/release-notes-generator': 14.1.1(semantic-release@25.0.5(typescript@6.0.3))
       semantic-release: 25.0.5(typescript@6.0.3)
@@ -4576,6 +4582,29 @@ snapshots:
       - supports-color
 
   '@semantic-release/github@12.0.8(semantic-release@25.0.5(typescript@6.0.3))':
+    dependencies:
+      '@octokit/core': 7.0.2
+      '@octokit/plugin-paginate-rest': 14.0.0(@octokit/core@7.0.2)
+      '@octokit/plugin-retry': 8.0.1(@octokit/core@7.0.2)
+      '@octokit/plugin-throttling': 11.0.1(@octokit/core@7.0.2)
+      '@semantic-release/error': 4.0.0
+      aggregate-error: 5.0.0
+      debug: 4.4.3
+      dir-glob: 3.0.1
+      http-proxy-agent: 9.0.0
+      https-proxy-agent: 9.0.0
+      issue-parser: 7.0.0
+      lodash-es: 4.17.21
+      mime: 4.0.3
+      p-filter: 4.1.0
+      semantic-release: 25.0.5(typescript@6.0.3)
+      tinyglobby: 0.2.15
+      undici: 7.22.0
+      url-join: 5.0.0
+    transitivePeerDependencies:
+      - supports-color
+
+  '@semantic-release/github@12.0.9(semantic-release@25.0.5(typescript@6.0.3))':
     dependencies:
       '@octokit/core': 7.0.2
       '@octokit/plugin-paginate-rest': 14.0.0(@octokit/core@7.0.2)
