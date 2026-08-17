@@ -44,7 +44,7 @@
   "devDependencies": {
     "@frsource/eslint-config": "1.85.8",
     "@frsource/prettier-config": "1.47.7",
-    "@frsource/semantic-release-config": "1.116.14",
+    "@frsource/semantic-release-config": "1.116.15",
     "eslint": "10.8.1",
     "globals": "17.9.0",
     "microbundle": "0.15.1",
