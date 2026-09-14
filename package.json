@@ -45,8 +45,8 @@
     "@frsource/eslint-config": "1.85.10",
     "@frsource/prettier-config": "1.47.9",
     "@frsource/semantic-release-config": "1.116.17",
-    "eslint": "10.9.1",
-    "globals": "17.11.0",
+    "eslint": "10.10.0",
+    "globals": "17.12.0",
     "microbundle": "0.15.1",
     "prettier": "3.9.6",
     "rimraf": "6.1.3",
@@ -56,7 +56,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "pnpm@11.24.0",
+  "packageManager": "pnpm@11.27.0",
   "files": [
     "dist",
     "package.json"
