@@ -49,10 +49,13 @@ export const attach = (element: HTMLTextAreaElement) => {
 
   element.addEventListener('input', inputHandler);
 
-  const elementPrototype = Object.getPrototypeOf(element);
-  const descriptor = Object.getOwnPropertyDescriptor(elementPrototype, 'value');
+  const ownDescriptor = Object.getOwnPropertyDescriptor(element, 'value');
+  const descriptor =
+    ownDescriptor ||
+    Object.getOwnPropertyDescriptor(Object.getPrototypeOf(element), 'value');
   Object.defineProperty(element, 'value', {
     ...descriptor,
+    configurable: true,
     set() {
       descriptor?.set?.apply(
         this,
@@ -66,6 +69,8 @@ export const attach = (element: HTMLTextAreaElement) => {
     detach() {
       element.removeAttribute(ATTRIBUTE_NAME);
       element.removeEventListener('input', inputHandler);
+      if (ownDescriptor) Object.defineProperty(element, 'value', ownDescriptor);
+      else delete (element as { value?: string }).value;
     },
     update: inputHandler,
   };
