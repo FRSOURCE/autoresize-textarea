@@ -1,3 +1,10 @@
+## [2.0.243](https://github.com/FRSOURCE/autoresize-textarea/compare/v2.0.242...v2.0.243) (2026-11-27)
+
+
+### Bug Fixes
+
+* keep value property already defined on the element ([#397](https://github.com/FRSOURCE/autoresize-textarea/issues/397)) ([80e3332](https://github.com/FRSOURCE/autoresize-textarea/commit/80e3332ce645bf16c63c3a82e0780b6a763465e9))
+
 ## [2.0.242](https://github.com/FRSOURCE/autoresize-textarea/compare/v2.0.241...v2.0.242) (2026-11-09)
 
 ## [2.0.241](https://github.com/FRSOURCE/autoresize-textarea/compare/v2.0.240...v2.0.241) (2026-11-09)
