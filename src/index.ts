@@ -49,10 +49,17 @@ export const attach = (element: HTMLTextAreaElement) => {
 
   element.addEventListener('input', inputHandler);
 
-  const elementPrototype = Object.getPrototypeOf(element);
-  const descriptor = Object.getOwnPropertyDescriptor(elementPrototype, 'value');
+  // Wrap the `value` property that is already in effect for this element. Some
+  // libraries (e.g. React, for controlled inputs) define their own `value`
+  // property directly on the element to keep track of the changes. Replacing it
+  // with a wrapper around the prototype's one would silently break them.
+  const ownDescriptor = Object.getOwnPropertyDescriptor(element, 'value');
+  const descriptor =
+    ownDescriptor ||
+    Object.getOwnPropertyDescriptor(Object.getPrototypeOf(element), 'value');
   Object.defineProperty(element, 'value', {
     ...descriptor,
+    configurable: true,
     set() {
       descriptor?.set?.apply(
         this,
@@ -66,6 +73,9 @@ export const attach = (element: HTMLTextAreaElement) => {
     detach() {
       element.removeAttribute(ATTRIBUTE_NAME);
       element.removeEventListener('input', inputHandler);
+      // bring back the `value` property from before the attachment
+      if (ownDescriptor) Object.defineProperty(element, 'value', ownDescriptor);
+      else delete (element as { value?: string }).value;
     },
     update: inputHandler,
   };
